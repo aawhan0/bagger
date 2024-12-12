@@ -3,7 +3,7 @@ const config = require("config");
 const dbgr = require("debug")("development:mongoose");
 
 mongoose
-.connect(`${config.get("MONGO_URI")}/bagger`)
+.connect(`${config.get("MONGODB_URI")}/bagger`)
 .then(function(){
     dbgr("connected");
 })
