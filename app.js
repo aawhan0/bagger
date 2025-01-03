@@ -18,8 +18,6 @@ app.use("/owners", ownersRouter);
 app.use("/products", productsRouter);
 app.use("/users", usersRouter);
 
-app.get("/", (req,res)=>{
-    res.send("heyy");
-});
+
 
 app.listen(3000);
